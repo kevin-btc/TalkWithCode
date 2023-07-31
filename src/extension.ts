@@ -159,6 +159,8 @@ async function vectorizeFiles(
   newPolyfactConfig: vscode.Uri,
   token: string
 ): Promise<string> {
+  vscode.window.showInformationMessage("tokenssss : " + token, { modal: true });
+
   const vectorizer = new Vectorizer(token, 2000);
   const files = vectorizer.readFilesFromPath(selectedFiles);
   const totalFiles = selectedFiles.length;
@@ -210,7 +212,7 @@ async function newVectorizer(workspacePath: string) {
       await vectorizeAction(workspacePath, token, workspaceFolder);
     }
   } catch (err: any) {
-    vscode.window.showErrorMessage(err.message + "Failed to create file.");
+    vscode.window.showErrorMessage(err.message);
     throw err;
   }
 }

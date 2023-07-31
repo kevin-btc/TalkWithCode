@@ -57,7 +57,3 @@ The extension vectorizes your code to create embeddings that allow the AI model 
 ## Contributing
 
 Pull requests welcome! Feel free to open issues for any bugs or feature requests.
-
-## License
-
-This project is licensed under the MIT license. See [LICENSE](LICENSE) for more details.

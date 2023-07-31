@@ -2,8 +2,12 @@
   "name": "talk-with-code",
   "displayName": "TalkWithCode",
   "description": "TalkWithCode is an intelligent VSCode extension designed to transform the way you interact with your codebase. It provides an intuitive, conversational interface that lets you ask questions directly to your codebase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "polyfactdocs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevin-btc/TalkWithCode.git"
+  },
   "engines": {
     "vscode": "^1.80.1"
   },
@@ -86,6 +90,7 @@
   },
   "dependencies": {
     "code-vectorizer": "^1.0.4",
-    "markdown-it": "^13.0.1"
+    "markdown-it": "^13.0.1",
+    "polyfact": "^0.1.22"
   }
 }
